@@ -1,7 +1,17 @@
 const http = require("http");
 
 const requestListener = (req, res) => {
-  res.write("Hello World\n");
+  // req, res are streams
+
+  //console.dir(req, { depth: 0 });
+  //console.log(req.url);
+  console.dir(res, { depth: 0 });
+
+  // https://nodejs.org/api/http.html#class-httpincomingmessage
+
+  // https://nodejs.org/api/http.html
+
+  res.write("Hello Node\n");
   res.end();
 };
 
