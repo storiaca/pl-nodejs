@@ -1,11 +1,13 @@
-const os = require('os');
+// https://nodejs.dev/learn/the-nodejs-os-module
 
-console.log('OS platform:', os.platform());
+const os = require("os");
 
-console.log('OS CPU architecture:', os.arch());
+console.log("OS platform:", os.platform());
 
-console.log('# of logical CPU cores', os.cpus().length);
+console.log("OS CPU architecture:", os.arch());
 
-console.log('Home directory for current user', os.homedir());
+console.log("# of logical CPU cores", os.cpus().length);
 
-console.log('line 1' + os.EOL + 'line 2' + os.EOL + 'line 3');
+console.log("Home directory for current user", os.homedir());
+
+console.log("line 1" + os.EOL + "line 2" + os.EOL + "line 3");
